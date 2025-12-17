@@ -6,9 +6,90 @@ body {
   line-height: 1.6;
 }
 
+/* Shared header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-logo {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-name {
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+}
+
+.brand-tagline {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.3;
+}
+
+.nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus {
+  text-decoration: underline;
+}
+
+.nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 .hero {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 1rem;
 }
 
 .hero-heading {
@@ -37,11 +118,121 @@ body {
 
 section {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 0.2rem 0.5rem;
+  margin: 0 auto 0.75rem;
+  padding: 0.75rem 0.5rem;
   
+}
+
+/* Ensure consistent spacing after the header on pages without a wrapper */
+body > section:first-of-type {
+  padding-top: 2rem;
+}
+
+/* Ensure consistent spacing for mission page sections */
+.page > section {
+  margin-bottom: 1.5rem;
+}
+
+.page > section:first-of-type {
+  padding-top: 2rem;
 }
 
 h1, h2 {
   color: #00D4FF;
+}
+
+/* Mission page layout */
+.page {
+  padding: 32px 0 56px;
+}
+
+.page-hero h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+}
+
+.lead {
+  max-width: 70ch;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Panels */
+.panel {
+  margin-top: 18px;
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.panel h2 {
+  margin: 0 0 10px;
+}
+
+/* Values grid */
+.values-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.value-card {
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(22, 33, 62, 0.45);
+}
+
+.value-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.value-card p {
+  margin: 0;
+  opacity: 0.88;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 12px 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 6px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.footer-note {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

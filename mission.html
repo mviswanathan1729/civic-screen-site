@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission & Values • Civic Screen</title>
+  <meta name="description" content="Mission and values of Civic Screen — privacy-first digital signage for communities and non-profits." />
+
+  <!-- Reuse your existing site styles -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Civic Screen Home">
+        <img src="images/logo.png" alt="Civic Screen logo" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Civic Screen</span>
+          <span class="brand-tagline">Privacy-first digital signage for communities and non-profits</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="mission.html" aria-current="page">Mission &amp; Values</a>
+      </nav>
+    </div>
+  </header>
+
+
+    <section>
+      <h2>Our Mission</h2>
+      <p><strong>Civic Screen exists to help communities share information clearly, respectfully, and without compromise.</strong></p>
+      <p>
+        We believe community spaces—libraries, civic centers, churches, and non-profits—deserve digital tools that are easy to use,
+        affordable, reliable, and worthy of public trust.
+      </p>
+      <p>
+        Civic Screen is a privacy-first digital signage platform for communities and non-profits.
+        We build calm, readable displays that help people find what matters—without tracking, ads, or complexity.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Values</h2>
+
+      <div class="values-grid">
+        <article class="value-card">
+          <h3>🏛️ Community First</h3>
+          <p>Designed around community needs—clarity over flash, function over features.</p>
+        </article>
+
+        <article class="value-card">
+          <h3>🔐 Privacy by Design</h3>
+          <p>No user tracking, no personal data collection, no advertising networks.</p>
+        </article>
+
+        <article class="value-card">
+          <h3>📖 Simplicity</h3>
+          <p>Simple configuration and predictable behavior—volunteer-friendly by intention.</p>
+        </article>
+
+        <article class="value-card">
+          <h3>♿ Accessibility &amp; Readability</h3>
+          <p>High contrast, large type, clear hierarchy—readable from across a room.</p>
+        </article>
+
+        <article class="value-card">
+          <h3>🔧 Reliability</h3>
+          <p>Built to run continuously and recover gracefully from issues.</p>
+        </article>
+
+        <article class="value-card">
+          <h3>🌱 Sustainability</h3>
+          <p>Lightweight to operate, affordable to deploy, sustainable long-term.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Our Commitment</h2>
+      <p>
+        Civic Screen is committed to serving community needs first, respecting privacy always, and evolving responsibly.
+        Our goal is not to be the biggest platform—just the most appropriate one for shared public spaces.
+      </p>
+    </section>
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Civic Screen</span>
+      <span class="footer-note">Clear information for communities, built with care.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
