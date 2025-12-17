@@ -37,8 +37,8 @@ body {
 }
 
 .brand-logo {
-  width: 84px;
-  height: 84px;
+  width: 92px;
+  height: 92px;
   object-fit: contain;
 }
 
@@ -149,6 +149,20 @@ h1, h2 {
   color: #00D4FF;
 }
 
+/* Links in sections */
+section a {
+  color: #00D4FF;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 212, 255, 0.6);
+  text-underline-offset: 3px;
+}
+
+section a:hover,
+section a:focus {
+  color: #3fb8ff;
+  text-decoration-color: #3fb8ff;
+}
+
 /* Mission page layout */
 .page {
   padding: 32px 0 56px;
@@ -241,6 +255,7 @@ h1, h2 {
 
   .footer-inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 }
