@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0F172A;
+  color: #F8FAFC;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero img {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1, h2 {
+  color: #00D4FF;
+}
