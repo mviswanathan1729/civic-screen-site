@@ -8,18 +8,38 @@ body {
 
 .hero {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
+}
+
+.hero-heading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero img {
   height: 80px;
-  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin: 0.25rem 0 0.75rem;
+}
+
+.hero-divider {
+  margin: 0.75rem auto 0;
+  width: 80%;
+  max-width: 640px;
+  border: 0;
+  border-top: 2px solid rgba(248, 250, 252, 0.25);
 }
 
 section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 0.2rem 0.5rem;
+  
 }
 
 h1, h2 {
