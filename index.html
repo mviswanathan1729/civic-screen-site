@@ -55,7 +55,7 @@
 </section>
 
 <section>
-  <h2>Why Civic Screen</h2>
+  <h2>Why Civic Screen?</h2>
   <p>
     Many signage systems are built for advertising and analytics. Civic Screen is built for people and shared spaces.
     Our focus is clarity and trust—not engagement metrics or monetization.
@@ -71,9 +71,16 @@
   </p>
 </section>
 
-<footer>
-  <p>© Civic Screen</p>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Civic Screen</span>
+    <span class="footer-note">Clear information for communities, built with care.</span>
+  </div>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

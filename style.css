@@ -123,6 +123,10 @@ section {
   
 }
 
+section:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
 /* Ensure consistent spacing after the header on pages without a wrapper */
 body > section:first-of-type {
   padding-top: 2rem;
@@ -135,6 +139,10 @@ body > section:first-of-type {
 
 .page > section:first-of-type {
   padding-top: 2rem;
+}
+
+.page > section:last-of-type {
+  margin-bottom: 1.5rem;
 }
 
 h1, h2 {
